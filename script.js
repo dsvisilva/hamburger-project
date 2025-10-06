@@ -21,8 +21,6 @@ function showAll(productsArray) {
   list.innerHTML = myLi;
 }
 
-buttonShowAll.addEventListener("click", () => showAll(menuOptions));
-
 function discountAll() {
   const newPrices = menuOptions.map((product) => ({
     ...product,
@@ -32,4 +30,16 @@ function discountAll() {
   showAll(newPrices);
 }
 
+function sumAllProducts() {
+  const totalValue = menuOptions.reduce((acc, curr) => acc + curr.price, 0);
+  list.innerHTML = `
+        <li>        
+            <p>O valor total é: R$ ${totalValue}</p>
+        </li>
+    `;
+}
+
+buttonShowAll.addEventListener("click", () => showAll(menuOptions));
 buttonMap.addEventListener("click", discountAll);
+sumAll.addEventListener("click", sumAllProducts);
+filter.addEventListener("click", )

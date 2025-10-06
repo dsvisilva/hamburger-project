@@ -53,6 +53,13 @@ img {
   cursor: pointer;
 }
 
+p {
+  font-size: 22px;
+   color: #a6c288;
+   font-weight: 700;
+    margin: 15px 0;
+}
+
 .hamburger {
   color: #a6c288;
   font-weight: 700;
@@ -63,10 +70,6 @@ img {
   color: #ebe68d;
   font-weight: 700;
   margin: 15px 0 35px 0;
-}
-
-p {
-  font-size: 22px;
 }
 
 li {
